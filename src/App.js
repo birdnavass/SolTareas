@@ -150,7 +150,7 @@ function App() {
             <button className="boton" type="submit">Enviar</button>
           </form>
 
-          <table>
+          <table className='tftable'>
             <thead>
               <tr>
                 <th>Estado</th>
@@ -161,15 +161,15 @@ function App() {
             <tbody>
 
               {ListarInformacion.map((item) => (
-                
-                  <tr key={item.id}>
-                    <td><button onClick={() => cambioEstadoTarea(item.id)}>
-                  {item.done ? 'Pendiente' : 'Completada'}
-                </button></td>
-                    <td><input name='title' placeholder={item.title} /></td>
-                    <td><input name='description' placeholder={item.description} /></td>
-                  </tr>
-                
+
+                <tr key={item.id}>
+                  <td><button onClick={() => cambioEstadoTarea(item.id)}>
+                    {item.done ? 'Pendiente' : 'Completada'}
+                  </button></td>
+                  <td><input name='title' placeholder={item.title} /></td>
+                  <td><input name='description' placeholder={item.description} /></td>
+                </tr>
+
               ))}
 
             </tbody>

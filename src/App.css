@@ -1,7 +1,11 @@
+@import url(./css/table.css);
+@import url(./css/form.css);
+@import url(./css/boxes.css);
+
 .contenedor{
     display: grid;
     place-items: center;
-    height: 70vh;
+    height: 30vh;
 }
 .box{
     width: 200px;
