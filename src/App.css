@@ -1,0 +1,17 @@
+.contenedor{
+    display: grid;
+    place-items: center;
+    height: 70vh;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background: #e4e4e4;
+}
+.menu{
+    position: fixed;
+}
+
+input::placeholder {
+    color: black;
+  }
